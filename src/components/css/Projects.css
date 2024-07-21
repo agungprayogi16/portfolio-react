@@ -1,0 +1,55 @@
+/* Dynamic Background Animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.projects-section {
+    
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+    color: white;
+    position: relative;
+   
+}
+
+/* Project Card Hover Effects */
+.project-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    padding: 30px;
+}
+
+.project-image {
+    transition: transform 0.3s ease-in-out;
+    padding: 30px;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.1);
+    padding: 30px;
+}
+
+.overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}

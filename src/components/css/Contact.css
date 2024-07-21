@@ -1,0 +1,39 @@
+/* Dynamic Background Animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact-section {
+
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+
+}
+
+/* Icon Size and Styling */
+.icon-large {
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+/* Social Media Icons */
+.social-icon {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
